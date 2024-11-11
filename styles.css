@@ -1,0 +1,265 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+
+.logo {
+    margin-left: 5%;
+    height: 100%;
+}
+
+nav {
+    width: 80%;
+    max-width: 400px;
+    height: 10%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav ul li {
+    font-size: 1rem;
+    list-style: none;
+    padding: 11px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+nav ul li:hover {
+    background: linear-gradient(brown, yellow);
+    color: black;
+}
+
+.nav-bar a {
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    height: 90%;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    position: absolute;
+    font-style: italic;
+    height: 0px;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    top: -6px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+.first_h2 {
+    margin-top: 150px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2em;
+}
+
+.description {
+    margin: 0 10%;
+}
+
+.description p {
+    margin: 50px auto 50px auto;
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 560px;
+}
+
+.Pricing {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item {
+    max-width: 600px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+}
+
+.item:hover img {
+    width: 80%;
+}
+
+.item:hover .item-description {
+    font-size: 1.5rem;
+}
+
+.item:hover .price {
+    font-size: 2rem;
+}
+
+.classical {
+    padding-top: 40px;
+}
+
+.eletric {
+    padding-top: 10px;
+}
+
+.bass {
+    padding-top: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 0;
+    margin-top: -10px;
+}
+
+.order {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.form {
+    display: block;
+    justify-content: center;
+}
+
+.email {
+    margin: 10px auto 50px auto;
+}
+
+#email {
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#email::placeholder {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.submit {
+    margin: 10px auto 10px auto;
+}
+
+#submit {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 10px;
+    border-style: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+#submit:hover {
+    background: linear-gradient(brown, yellow);
+    color: black;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+footer span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+    color: gray;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        left: 20%;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        color: transparent;
+    }
+}
+
+@media (max-width: 620px) {
+    .item img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        color: transparent;
+    }
+
+    .logo {
+        margin-left: 1%;
+        width: 20%;
+        height: 70%;
+    }
+
+    nav ul li {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    nav ul li {
+        font-size: 0.5rem;
+    }
+}
